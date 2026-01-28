@@ -13,13 +13,13 @@
     <span [class]="car.available
       ? 'inline-block px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800'
       : 'inline-block px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800'">
-      {{ car.available ? 'Available' : 'Sold' }}
+      {{ car.available ? 'Available' : 'Sold Out' }}
     </span>
 
     <p class="text-gray-500 text-sm mt-3 capitalize">{{ car.fuel }}</p>
 
     <div class="flex gap-2 mt-4">
-      <button (click)="onViewDetails()"
+      <button (click)="onViewDetails($event)"
         class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
         View
       </button>

@@ -25,7 +25,7 @@ export class CarCard {
     return this.car.price.toLocaleString('en-US') + ' MAD';
   }
 
-  onViewDetails() {
+  onViewDetails(e: Event) {
     console.log('View Details for car:', this.car.id);
   }
 
